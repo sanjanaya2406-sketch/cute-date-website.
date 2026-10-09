@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe8ef">
+  <title>A Little Date for Us 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floaties" aria-hidden="true">
+    <span>♡</span><span>✿</span><span>♡</span><span>✧</span><span>🌷</span><span>♡</span>
+  </div>
+
+  <main class="app">
+    <div class="top-note">a little plan made with love <span>♥</span></div>
+
+    <section class="card page active" id="invitePage">
+      <div class="sticker">🐻💗</div>
+      <div class="eyebrow">hey, pretty girl...</div>
+      <h1>Will you go on a date with me? 🌸</h1>
+      <p class="subtext">I have a tiny question, a few cute plans, and one very important food discussion.</p>
+      <div class="button-area" id="buttonArea">
+        <button class="btn yes-btn" id="yesBtn">YES, OF COURSE ♡</button>
+        <button class="btn no-btn" id="noBtn">no 🙈</button>
+      </div>
+      <p class="tiny-hint" id="hint">P.S. there's pani puri involved 👀</p>
+    </section>
+
+    <section class="card page" id="yesPage">
+      <div class="sticker">🥹💗</div>
+      <div class="eyebrow">WAIT, REALLY?!</div>
+      <h1>YOU SAID YES?! 😭</h1>
+      <p class="subtext">My heart just did a tiny happy dance. Now let's plan the cutest date ever.</p>
+      <div class="celebrate">💗 ✨ 🌷 ✨ 💗</div>
+      <button class="btn primary" id="foodPageBtn">first, the most important question →</button>
+    </section>
+
+    <section class="card page" id="foodPage">
+      <div class="sticker">🍓🥗</div>
+      <div class="eyebrow">date planning, level one</div>
+      <h1>What are you craving, my love?</h1>
+      <p class="subtext">Everything here is vegetarian. Choose as many as you like!</p>
+      <form id="foodForm">
+        <div class="food-grid">
+          <label class="food-option"><input type="checkbox" name="food" value="Pani puri"> <span class="food-emoji">🥙</span><span><strong>Pani puri</strong><small>spicy, tangy, perfect</small></span></label>
+          <label class="food-option"><input type="checkbox" name="food" value="Pizza"> <span class="food-emoji">🍕</span><span><strong>Veg pizza</strong><small>cheesy happiness</small></span></label>
+          <label class="food-option"><input type="checkbox" name="food" value="Pav bhaji"> <span class="food-emoji">🍞</span><span><strong>Pav bhaji</strong><small>buttery comfort food</small></span></label>
+          <label class="food-option"><input type="checkbox" name="food" value="Dosa"> <span class="food-emoji">🥞</span><span><strong>Dosa</strong><small>crispy and delicious</small></span></label>
+          <label class="food-option"><input type="checkbox" name="food" value="Chaat"> <span class="food-emoji">🥗</span><span><strong>Chaat</strong><small>sweet, spicy, crunchy</small></span></label>
+          <label class="food-option"><input type="checkbox" name="food" value="Momos"> <span class="food-emoji">🥟</span><span><strong>Veg momos</strong><small>with extra chutney</small></span></label>
+          <label class="food-option"><input type="checkbox" name="food" value="Pasta"> <span class="food-emoji">🍝</span><span><strong>White/red sauce pasta</strong><small>cute café vibes</small></span></label>
+          <label class="food-option"><input type="checkbox" name="food" value="Ice cream"> <span class="food-emoji">🍦</span><span><strong>Ice cream</strong><small>dessert is mandatory</small></span></label>
+        </div>
+        <label for="otherFood">Anything else you want? <span class="optional">(optional)</span></label>
+        <input id="otherFood" type="text" placeholder="Tell me your favourite snack…">
+        <button class="btn primary full" type="submit">YUM! NEXT STEP ♥</button>
+      </form>
+    </section>
+
+    <section class="card page" id="datePage">
+      <div class="sticker">🗓️🐾</div>
+      <div class="eyebrow">our little adventure</div>
+      <h1>When are you free?</h1>
+      <p class="subtext">Pick a day and time. We'll figure out the rest together.</p>
+      <form id="dateForm">
+        <label for="date">Pick a day 📅</label>
+        <input id="date" name="date" type="date" required>
+        <label for="time">What time? ⏰</label>
+        <select id="time" name="time" required>
+          <option value="">Select a time…</option>
+          <option>11:00 AM</option><option>1:00 PM</option><option>3:00 PM</option>
+          <option>5:00 PM</option><option>6:30 PM</option><option>7:30 PM</option>
+        </select>
+        <label for="activity">Pick our date vibe 💐</label>
+        <select id="activity" name="activity" required>
+          <option value="">Choose one…</option>
+          <option>☕ Café and long conversations</option>
+          <option>🌅 Sunset walk</option>
+          <option>🎬 Movie date</option>
+          <option>🌳 Park picnic</option>
+          <option>🎨 A surprise adventure</option>
+          <option>🍽️ Foodie date</option>
+        </select>
+        <label for="place">Any place in mind? <span class="optional">(optional)</span></label>
+        <input id="place" name="place" type="text" placeholder="Your favourite place…">
+        <button class="btn primary full" type="submit">IT'S A DATE! ♥</button>
+      </form>
+    </section>
+
+    <section class="card page" id="memoriesPage">
+      <div class="sticker">📸🌷</div>
+      <div class="eyebrow">little moments, big feelings</div>
+      <h1>Our tiny memory corner</h1>
+      <p class="subtext">Replace these cute placeholders with your own photos. The best memories are the ones that make us smile for no reason.</p>
+      <div class="gallery">
+        <figure class="memory"><div class="photo-placeholder">🩷</div><figcaption>my favourite smile</figcaption></figure>
+        <figure class="memory"><div class="photo-placeholder">🌸</div><figcaption>our happy place</figcaption></figure>
+        <figure class="memory"><div class="photo-placeholder">✨</div><figcaption>a moment to keep</figcaption></figure>
+      </div>
+      <p class="tiny-hint">Photo setup instructions are in README.txt.</p>
+      <button class="btn primary" id="letterBtn">one last little thing… 💌</button>
+    </section>
+
+    <section class="card page" id="finalPage">
+      <div class="sticker">💌</div>
+      <div class="eyebrow">just for you</div>
+      <h1>It's a date, my love! 💖</h1>
+      <div class="summary" id="planSummary"></div>
+      <div class="letter">
+        <div class="letter-title">a little note from your boyfriend</div>
+        <p>My favourite plans are the ones that include you. It doesn't have to be fancy—good food, silly jokes, and time with you would make any day special. Thank you for being my favourite person to make memories with. 🌷</p>
+        <p class="signoff">your boy, always ♡</p>
+      </div>
+      <button class="btn secondary" id="restartBtn">start our little adventure again ↻</button>
+      <p class="tiny-hint">Screenshot your plan so you can remember it 💗</p>
+    </section>
+
+    <div class="music-bar">
+      <button class="music-btn" id="musicBtn" aria-label="Play or pause music">▶</button>
+      <div class="music-copy"><strong>our little soundtrack</strong><small id="musicStatus">Add your own music file to play a song</small></div>
+      <audio id="bgMusic" loop preload="none">
+        <source src="our-song.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <footer>made with <span>♥</span>, butterflies, and a little courage</footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
